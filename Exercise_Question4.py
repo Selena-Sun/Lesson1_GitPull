@@ -7,6 +7,9 @@ def count_repeated_characters(s):
     return repeated_chars
 
 if __name__ == "__main__":
+    import doctest
+    doctest.testmod(verbose=True)
+
     input_string = input("Enter a string to find repeated characters: ")
     result = count_repeated_characters(input_string)
     print(f"Repeated characters and their counts: {result}")
